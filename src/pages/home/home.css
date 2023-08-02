@@ -1,0 +1,320 @@
+/* Default styles */
+.home {
+  margin: auto 60px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 100px 0 50px 0;
+}
+
+.column-1 {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.column-2 {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.column-3 {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 80%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+}
+
+.list li {
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  line-height: 35px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #000000;
+}
+
+.list li span {
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+.banner img {
+  width: 45%;
+  height: auto;
+  position: absolute;
+  top: 72%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  box-shadow: rgba(255, 123, 0, 0.5) 0px 200px 60px -150px, rgba(0, 0, 0, 0.3) 0px 30px 50px -30px;
+}
+
+.secondary-image {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.secondary-image img {
+  width: 80%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.secondary-image p {
+  font-size: 14px;
+  width: 80%;
+  color: #313131;
+}
+
+.circle-text {
+  width: 120px;
+  position: relative;
+  top: 20%;
+  left: -35%;
+}
+
+.about {
+  position: relative;
+  left: 10%;
+  width: 500px;
+  margin-top: 100px;
+}
+
+.about p {
+  font-size: 18px;
+  width: 350px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.scroll-down {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  margin-right: 90px;
+}
+
+.scroll-down i {
+  font-size: 12px;
+  margin-right: 10px;
+  border: 2px solid #313131;
+  border-radius: 100%;
+  padding: 14px 18px;
+}
+
+.scroll-down span {
+  font-size: 18px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.social-links a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 45px;
+  margin-top: 10px;
+}
+
+.social-links a:hover {
+  color: #999;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+  /* Adjust column widths */
+  .column-1 {
+    flex-basis: 100%;
+    order: 2;
+    margin-bottom: 30px;
+  }
+
+  .column-2 {
+    flex-basis: 100%;
+    order: 1;
+  }
+
+  .column-3 {
+    display: none;
+  }
+
+  /* Adjust header text size */
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .list li {
+    font-size: 16px;
+  }
+
+  .list li span {
+    font-size: 14px}
+
+  /* Adjust banner image size */
+  .banner img {
+    width: 80%;
+    top: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust header padding */
+  .header {
+    padding: 80px 0 30px 0;
+  }
+
+  /* Adjust header text size */
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .list li {
+    font-size: 14px;
+  }
+
+  .list li span {
+    font-size: 12px;
+  }
+
+  /* Adjust secondary image size */
+  .secondary-image img {
+    height: 200px;
+  }
+
+  /* Adjust circle text size */
+  .circle-text {
+    width: 150px;
+    height: 150px;
+    font-size: 24px;
+  }
+
+  /* Adjust about section size */
+  .about {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .about p {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Adjust footer padding */
+  .footer {
+    padding: 20px;
+  }
+
+  /* Adjust social link margin */
+  .social-links a {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust header text size */
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .list li {
+    font-size: 12px;
+  }
+
+  .list li span {
+    font-size: 10px;
+  }
+
+  /* Adjust banner image size */
+  .banner img {
+    width: 100%;
+    top: 55%;
+  }
+
+  /* Adjust secondary image size */
+  .secondary-image img {
+    height: 150px;
+  }
+
+  /* Adjust circle text size */
+  .circle-text {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+  }
+
+  /* Adjust about section size */
+  .about {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .about p {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* Adjust footer padding */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  /* Adjust social link margin */
+  .social-links a {
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
+  /* Adjust scroll down icon size */
+  .scroll-down i {
+    font-size: 8px;
+    padding: 12px 16px;
+  }
+
+  .scroll-down span {
+    display: none;
+  }
+}
